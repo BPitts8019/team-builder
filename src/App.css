@@ -1,3 +1,5 @@
 .App {
-   background-color: magenta;
+   background-color: #70a5db;
+   border-radius: 20px;
+   padding: 1.6rem;
 }
