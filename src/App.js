@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import {Card, CardHeader, CardBody, CardTitle, CardText} from "reactstrap"
-import './App.css';
+import React, {useState} from "react";
+import "./App.css";
 
-import CreateMember from './components/CreateMember.js';
+import CreateMember from "./components/CreateMember.js";
+import MemberCard from "./components/MemberCard.js";
 
 function App() {
    
@@ -21,19 +21,7 @@ function App() {
          <CreateMember addMember={addTeamMember} />
 
          <div className="display">
-            {/* {team.map((member, index) => <div key={index}>{member.firstName}</div>)} */}
-            <div className="member-card">
-               <h4 className="mc-title">Hello World</h4>
-               <div className="mc-body">This is the body</div>
-            </div>
-            <div className="member-card">
-               <h4 className="mc-title">Hello World</h4>
-               <div className="mc-body">This is the body</div>
-            </div>
-            <div className="member-card">
-               <h4 className="mc-title">Hello World</h4>
-               <div className="mc-body">This is the body</div>
-            </div>
+            {team.map((member, index) => <MemberCard key={index} member={member} />)}
          </div>
       </div>
    );

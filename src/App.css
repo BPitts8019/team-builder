@@ -24,20 +24,33 @@
 .display {
    display: flex;
    flex-flow: row wrap;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 
 .member-card {
    background-color: #ECEAE7;
    margin-bottom: 20px;
    padding: 1rem;
+   max-width: 30%;
    width: 30%;
 
    box-shadow: 0 5px 8px 2px #283146;
+}
+
+.member-card .mc-title,
+.member-card .mc-body {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 }
 
 .member-card .mc-title {
    padding-bottom: 0.25rem;
    border-bottom: 1px solid #283146;
    width: 100%;
+}
+
+.member-card .mc-body {
+   color: #56585D;
+   font-style: italic;
 }
