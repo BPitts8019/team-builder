@@ -21,7 +21,7 @@ function App() {
          <CreateMember addTeamMember={addTeamMember} />
 
          <div className="display">
-            {team.map((member, index) => <MemberCard key={index} member={member} />)}
+            {team.map((member, index) => <MemberCard key={index} {...member} />)}
          </div>
       </div>
    );
