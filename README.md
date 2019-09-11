@@ -23,8 +23,8 @@ In this project you'll build an app that will keep track of memebers of a team. 
 - [x] CD into your `team-builder` directory
 - [x] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 

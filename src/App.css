@@ -1,5 +1,9 @@
-.App {
+.team-builder {
    background-color: #70a5db;
    border-radius: 20px;
    padding: 1.6rem;
+}
+
+.btnSubmit {
+   text-align: right;
 }
