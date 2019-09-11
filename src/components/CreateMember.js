@@ -1,7 +1,10 @@
 import React, {useState} from "react";
-import {Form, FormGroup, Label, Input, Button} from "reactstrap";
+import {Form} from "reactstrap";
 
-function CreateMember (props) {
+import UserInput from "./UserInput.js";
+import SubmitButton from "./SubmitButton.js";
+
+function CreateMember ({addTeamMember}) {
    const INIT_MEMBER = {
       firstName: "",
       lastName: "",
@@ -12,7 +15,7 @@ function CreateMember (props) {
    const submitForm = event => {
       event.preventDefault();
       
-      props.addMember(newMember);
+      addTeamMember(newMember);
       setNewMember(INIT_MEMBER);
    };
    const formChanged = event => {
@@ -24,30 +27,19 @@ function CreateMember (props) {
 
    return (
       <Form className="team-builder" onSubmit={submitForm}>
-         <FormGroup>
-            <Label for="firstName">First Name</Label>
-            <Input type="text" id="firstName" required
-               value={newMember.firstName}
-               onChange={formChanged}
-            />
-         </FormGroup>
-         <FormGroup>
-            <Label for="lastName">Last Name</Label>
-            <Input type="text" id="lastName" required
-               value={newMember.lastName}
-               onChange={formChanged}
-            />
-         </FormGroup>
-         <FormGroup>
-            <Label for="email">Email</Label>
-            <Input type="text" id="email"
-               value={newMember.email}
-               onChange={formChanged}
-            />
-         </FormGroup>
-         <div className="btnSubmit">
-            <Button type="submit">Submit</Button>
-         </div>
+         <UserInput id="firstName" label="First Name" isRequired
+            value={newMember.firstName}
+            changeHandler={formChanged}
+         />
+         <UserInput id="lastName" label="Last Name" isRequired
+            value={newMember.lastName}
+            changeHandler={formChanged}
+         />
+         <UserInput id="email" type="email" label="Email"
+            value={newMember.email}
+            changeHandler={formChanged}
+         />
+         <SubmitButton />
       </Form>
    );
 }

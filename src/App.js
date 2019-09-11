@@ -18,7 +18,7 @@ function App() {
    return (
       <div className="App">
          <h1>Team Builder</h1>
-         <CreateMember addMember={addTeamMember} />
+         <CreateMember addTeamMember={addTeamMember} />
 
          <div className="display">
             {team.map((member, index) => <MemberCard key={index} member={member} />)}
