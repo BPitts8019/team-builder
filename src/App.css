@@ -1,14 +1,43 @@
 .team-builder {
-   color: white;
+   color: #171A21;
    background-color: #99907D;
    border-radius: 20px;
    padding: 1.6rem;
+   margin-bottom: 2rem;
 }
 
-.btnSubmit {
+.team-builder .form-control {
+   background-color: #ECEAE7;
+}
+
+.team-builder .btnSubmit {
    text-align: right;
 }
 
-.btnSubmit > button {
-   background-color: #585191;
+.team-builder .btnSubmit > button {
+   background-color: #283146;
+}
+.team-builder .btnSubmit > button:hover {
+   background-color: #56585D;
+}
+
+.display {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+
+.member-card {
+   background-color: #ECEAE7;
+   margin-bottom: 20px;
+   padding: 1rem;
+   width: 30%;
+
+   box-shadow: 0 5px 8px 2px #283146;
+}
+
+.member-card .mc-title {
+   padding-bottom: 0.25rem;
+   border-bottom: 1px solid #283146;
+   width: 100%;
 }
