@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./App.css";
 
-import CreateMember from "./components/CreateMember.js";
+import Form from "./components/Form.js";
 import MemberCard from "./components/MemberCard.js";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
    return (
       <div className="App">
          <h1>Team Builder</h1>
-         <CreateMember addTeamMember={addTeamMember} />
+         <Form addTeamMember={addTeamMember} />
 
          <div className="display">
             {team.map((member, index) => <MemberCard key={index} {...member} />)}

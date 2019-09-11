@@ -1,14 +1,14 @@
 import React, {useState} from "react";
-import {Form} from "reactstrap";
+import {Form as RSForm} from "reactstrap";
 
 import UserInput from "./UserInput.js";
 import SubmitButton from "./SubmitButton.js";
 
-function CreateMember ({addTeamMember}) {
+function Form ({addTeamMember}) {
    const INIT_MEMBER = {
-      firstName: "",
-      lastName: "",
-      email: ""
+      name: "",
+      email: "",
+      role: ""
    };
    const [newMember, setNewMember] = useState(INIT_MEMBER);
 
@@ -26,22 +26,22 @@ function CreateMember ({addTeamMember}) {
    };
 
    return (
-      <Form className="team-builder" onSubmit={submitForm}>
-         <UserInput id="firstName" label="First Name" isRequired
-            value={newMember.firstName}
+      <RSForm className="team-builder" onSubmit={submitForm}>
+         <UserInput id="name" label="Name" isRequired
+            value={newMember.name}
             changeHandler={formChanged}
          />
-         <UserInput id="lastName" label="Last Name" isRequired
-            value={newMember.lastName}
-            changeHandler={formChanged}
-         />
-         <UserInput id="email" type="email" label="Email"
+         <UserInput id="email" type="email" label="Email" isRequired
             value={newMember.email}
             changeHandler={formChanged}
          />
+         <UserInput id="role" label="Role" isRequired
+            value={newMember.role}
+            changeHandler={formChanged}
+         />
          <SubmitButton />
-      </Form>
+      </RSForm>
    );
 }
 
-export default CreateMember;
+export default Form;
