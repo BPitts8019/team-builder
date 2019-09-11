@@ -1,9 +1,14 @@
 .team-builder {
-   background-color: #70a5db;
+   color: white;
+   background-color: #99907D;
    border-radius: 20px;
    padding: 1.6rem;
 }
 
 .btnSubmit {
    text-align: right;
+}
+
+.btnSubmit > button {
+   background-color: #585191;
 }
