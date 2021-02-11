@@ -1,0 +1,56 @@
+.team-builder {
+   color: #171A21;
+   background-color: #99907D;
+   border-radius: 20px;
+   padding: 1.6rem;
+   margin-bottom: 2rem;
+}
+
+.team-builder .form-control {
+   background-color: #ECEAE7;
+}
+
+.team-builder .btnSubmit {
+   text-align: right;
+}
+
+.team-builder .btnSubmit > button {
+   background-color: #283146;
+}
+.team-builder .btnSubmit > button:hover {
+   background-color: #56585D;
+}
+
+.display {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+}
+
+.member-card {
+   background-color: #ECEAE7;
+   margin-bottom: 20px;
+   padding: 1rem;
+   max-width: 30%;
+   width: 30%;
+
+   box-shadow: 0 5px 8px 2px #283146;
+}
+
+.member-card .mc-title,
+.member-card .mc-body {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.member-card .mc-title {
+   padding-bottom: 0.25rem;
+   border-bottom: 1px solid #283146;
+   width: 100%;
+}
+
+.member-card .mc-body {
+   color: #56585D;
+   font-style: italic;
+}

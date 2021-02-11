@@ -1,0 +1,30 @@
+@import "https://fonts.googleapis.com/css?family=Lora|Roboto:400,700";
+
+/* General Styles */
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   font-family: 'Lora', serif;
+   color: black;
+}
+
+h1, h2, h3, h4, h5 {
+   font-family: 'Roboto', sans-serif;
+   color: black;
+}
+
+h1 {
+   font-size: 48px;
+}
+
+h4 {
+   font-size: 25px;
+}
+
+#root {
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+}
